@@ -24,7 +24,23 @@ limitations under the License.
 
 > Return an array of an object's inherited writable property names.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-inherited-writable-property-names
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -33,7 +49,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@esm/index.mjs';
+var inheritedWritablePropertyNames = require( '@stdlib/utils-inherited-writable-property-names' );
 ```
 
 #### inheritedWritablePropertyNames( obj\[, level] )
@@ -43,7 +59,7 @@ Returns an `array` of an object's inherited writable property names.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+var defineProperty = require( '@stdlib/utils-define-property' );
 
 function Foo() {
     this.a = 'b';
@@ -67,8 +83,8 @@ By default, the function walks an object's entire prototype chain. To limit the 
 <!-- eslint-disable id-length -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import inherit from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherit@esm/index.mjs';
+var defineProperty = require( '@stdlib/utils-define-property' );
+var inherit = require( '@stdlib/utils-inherit' );
 
 function Bar() {
     return this;
@@ -123,14 +139,9 @@ var keys = inheritedWritablePropertyNames( f, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@esm/index.mjs';
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var inheritedWritablePropertyNames = require( '@stdlib/utils-inherited-writable-property-names' );
 
 function Foo() {
     this.a = {
@@ -158,10 +169,6 @@ var keys = inheritedWritablePropertyNames( obj );
 
 console.log( keys );
 // e.g., => [ 'foo', ... ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -194,7 +201,7 @@ console.log( keys );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -250,6 +257,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/utils-inherited-writable-property-names/tree/deno
 [umd-url]: https://github.com/stdlib-js/utils-inherited-writable-property-names/tree/umd
 [esm-url]: https://github.com/stdlib-js/utils-inherited-writable-property-names/tree/esm
+[branches-url]: https://github.com/stdlib-js/utils-inherited-writable-property-names/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-inherited-writable-property-names/main/LICENSE
 
@@ -257,13 +265,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/inherited-writable-property-symbols]: https://github.com/stdlib-js/utils-inherited-writable-property-symbols/tree/esm
+[@stdlib/utils/inherited-writable-property-symbols]: https://github.com/stdlib-js/utils-inherited-writable-property-symbols
 
-[@stdlib/utils/writable-property-names]: https://github.com/stdlib-js/utils-writable-property-names/tree/esm
+[@stdlib/utils/writable-property-names]: https://github.com/stdlib-js/utils-writable-property-names
 
-[@stdlib/utils/writable-property-names-in]: https://github.com/stdlib-js/utils-writable-property-names-in/tree/esm
+[@stdlib/utils/writable-property-names-in]: https://github.com/stdlib-js/utils-writable-property-names-in
 
-[@stdlib/utils/properties]: https://github.com/stdlib-js/utils-properties/tree/esm
+[@stdlib/utils/properties]: https://github.com/stdlib-js/utils-properties
 
 <!-- </related-links> -->
 
