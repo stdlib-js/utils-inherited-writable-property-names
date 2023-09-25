@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-inherited-writable-property-names",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Return an array of an object's inherited writable property names.",
   "license": "Apache-2.0",
   "author": {
