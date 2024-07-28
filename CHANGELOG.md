@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="v0.1.2">
+<section class="release" id="v0.2.0">
 
-## 0.1.2 (2024-07-28)
+## 0.2.0 (2024-07-28)
 
 No changes reported for this release.
 
