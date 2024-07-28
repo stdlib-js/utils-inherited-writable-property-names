@@ -44,6 +44,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-inherited-writable-property-names/tags). For example,
+
+```javascript
 import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@v0.1.1-deno/mod.js';
 ```
 
@@ -136,7 +141,7 @@ var keys = inheritedWritablePropertyNames( f, 1 );
 
 ```javascript
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@v0.1.1-deno/mod.js';
+import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@deno/mod.js';
 
 function Foo() {
     this.a = {
