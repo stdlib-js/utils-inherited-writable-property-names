@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@esm/index.mjs';
+import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@v0.1.1-esm/index.mjs';
 ```
 
 #### inheritedWritablePropertyNames( obj\[, level] )
@@ -141,7 +141,7 @@ var keys = inheritedWritablePropertyNames( f, 1 );
 <script type="module">
 
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@esm/index.mjs';
+import inheritedWritablePropertyNames from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-writable-property-names@v0.1.1-esm/index.mjs';
 
 function Foo() {
     this.a = {
